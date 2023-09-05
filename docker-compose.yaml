@@ -11,4 +11,5 @@ services:
     ports:
       - '3000:3000'
     environment:
-      - NODE_ENV=local
+      NODE_ENV: "local"
+      REACT_APP_API_KEY: ""
