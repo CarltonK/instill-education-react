@@ -10,7 +10,6 @@ const App = () => {
   // Request
   const getFilmsRequest = async (searchValue) => {
     const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_API_KEY}`;
-    console.log(url)
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -24,6 +23,7 @@ const App = () => {
 
   return (
     <div className='container-fluid film-app'>
+      <p>Hallo Leute</p>
       <div className='row d-flex align-items-center mt-4 mb-4'>
         <SearchField searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>

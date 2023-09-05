@@ -8,6 +8,7 @@ const SearchField = (props) => {
 				value={props.value}
 				onChange={(event) => props.setSearchValue(event.target.value)}
 				placeholder='Type to search...'
+				type='text'
 			></input>
 		</div>
 	);
