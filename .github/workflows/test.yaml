@@ -1,4 +1,4 @@
-name: Node.js CI
+name: OMDB React Client CI
 
 on:
   push:

@@ -8,7 +8,7 @@ Simply create a PR towards the main branch and view tests on the actions tab of 
 
 ## Current Test Status ##
 
-[![Tests](https://https://github.com/CarltonK/instill-education-react/actions/workflows/test.yaml/badge.svg)](https://https://github.com/CarltonK/instill-education-react/actions/workflows/test.yaml)
+[![Tests](https://github.com/CarltonK/instill-education-react/actions/workflows/test.yaml/badge.svg)](https://github.com/CarltonK/instill-education-react/actions/workflows/test.yaml)
 
 ### Live Site ####
 https://instill-education-app-v7gpzuhw2a-ew.a.run.app/
