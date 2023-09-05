@@ -22,7 +22,7 @@ spec:
             - name: GOOGLE_CLOUD_PROJECT
               value: "<GOOGLE_CLOUD_PROJECT>"
             - name: REACT_APP_API_KEY
-              VALUE: "<REACT_APP_API_KEY>"
+              value: "<REACT_APP_API_KEY>"
   traffic:
     - latestRevision: true
       percent: 100
