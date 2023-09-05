@@ -17,6 +17,7 @@ echo
 awk '{gsub(/<CONTAINER_IMAGE>/,"gcr.io/'$2'/'$1':'$4'")}1' /workspace/service.yaml >/workspace/tmp.yaml && mv /workspace/tmp.yaml /workspace/service.yaml
 awk '{gsub(/<PROJECT_SERVICE>/,"'$1'")}1' /workspace/service.yaml >/workspace/tmp.yaml && mv /workspace/tmp.yaml /workspace/service.yaml
 awk '{gsub(/<GOOGLE_CLOUD_PROJECT>/,"'$2'")}1' /workspace/service.yaml >/workspace/tmp.yaml && mv /workspace/tmp.yaml /workspace/service.yaml
+awk '{gsub(/<REACT_APP_API_KEY>/,"'$5'")}1' /workspace/service.yaml >/workspace/tmp.yaml && mv /workspace/tmp.yaml /workspace/service.yaml
 
 
 echo

@@ -19,6 +19,7 @@ steps:
         "$PROJECT_ID",
         "$LOCATION",
         "$COMMIT_SHA",
+        "{_API_KEY}",
       ]
 images:
   - "gcr.io/$PROJECT_ID/${_PROJECT_SERVICE}:$COMMIT_SHA"
