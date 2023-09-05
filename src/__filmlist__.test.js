@@ -15,8 +15,7 @@ describe('FilmList Component', () => {
     const moviePosters = getAllByAltText('film');
     expect(moviePosters).toHaveLength(movies.length);
 
-    // You can further test properties of individual elements if needed.
-    // For example, to test the `src` attribute of the first image:
+    // test properties of individual elements if needed.
     expect(moviePosters[0]).toHaveAttribute('src', 'url1');
   });
 
