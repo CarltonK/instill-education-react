@@ -8,6 +8,7 @@ steps:
         "$PROJECT_ID",
         "${_PROJECT_SERVICE}",
         "$COMMIT_SHA",
+        "${_API_KEY}",
       ]
   - id: "Deploy"
     name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
@@ -18,8 +19,7 @@ steps:
         "${_PROJECT_SERVICE}",
         "$PROJECT_ID",
         "$LOCATION",
-        "$COMMIT_SHA",
-        "${_API_KEY}",
+        "$COMMIT_SHA"
       ]
 images:
   - "gcr.io/$PROJECT_ID/${_PROJECT_SERVICE}:$COMMIT_SHA"

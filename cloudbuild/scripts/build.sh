@@ -1,5 +1,13 @@
 echo
 echo "************************"
+echo "* Variable subsitituion *"
+echo "************************"
+echo
+
+awk '{gsub(/<REACT_APP_API_KEY>/,"'$4'")}1' /workspace/src/.env.production >/workspace/tmp.env && mv /workspace/tmp.env /workspace/src/.env.production
+
+echo
+echo "************************"
 echo "* Build container *"
 echo "************************"
 echo
