@@ -11,4 +11,4 @@ COPY package*.json /app/
 
 RUN npm i
 # start app
-CMD ["npm", "start"]
+CMD ["npm", "run", "local"]
