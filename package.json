@@ -15,7 +15,7 @@
   "scripts": {
     "local": "react-scripts start",
     "start": "env-cmd -f src/.env.production react-scripts start",
-    "build": "react-scripts build",
+    "build": "env-cmd -f src/.env.production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
