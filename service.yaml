@@ -15,7 +15,7 @@ spec:
       containers:
         - image: <CONTAINER_IMAGE>
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           env:
             - name: NODE_ENV
               value: "production"
