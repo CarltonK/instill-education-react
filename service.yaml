@@ -21,6 +21,10 @@ spec:
               value: "production"
             - name: GOOGLE_CLOUD_PROJECT
               value: "<GOOGLE_CLOUD_PROJECT>"
+          resources:
+            limits:
+              memory: 128Mi
+              cpu: 1000m
   traffic:
     - latestRevision: true
       percent: 100
